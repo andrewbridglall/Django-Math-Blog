@@ -1,0 +1,12 @@
+node_modules
+.vscode/
+env/
+mail/
+media_root/
+scss/
+src/
+static_root/
+.browserslistrc
+.travis.yml
+gulpfile.js
+*.json
