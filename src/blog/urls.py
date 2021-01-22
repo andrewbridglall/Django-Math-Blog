@@ -8,7 +8,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='post-list'),
     path('about/', about),
-    path('post/<id>/', post, name='post-detail'),
+    path('post/<slug:slug_text>/', post),
+    # path('post/<id>/', post, name='post-detail'),
     # path('contact/', contact),
     path('tinymce/', include('tinymce.urls'))
 
