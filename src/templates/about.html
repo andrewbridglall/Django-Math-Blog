@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Page Header -->
+  <header class="masthead" style="background-image: url({% static 'img/notebook.jpg' %})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About</h1>
+            <span class="subheading">Purpose of the blog</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Hi, I'm Andrew! I previously took Analysis I with Dr. Der-Chen Chang in fall 2020. After covering over 120 theorems, defintions, postulates and remarks by the end of the semester, my handwritten study guides were a mess.
+        </p>
+        <p>This blog contains every theorem covered in the course rendered in LaTeX. Hopefully it can serve as a helpful resource to review for homework and exams. For each chapter, there is also a downloadable pdf of the theorems. Along with a few trusted Analysis I classmates, I made sure that all theorems contained here read verbatim from the course text, <i>An Introduction to Analysis</i> (4th edition) by William R. Wade. If you do spot an error, <a href="mailto:andrew.bridglall@gmail.com">let me know</a> and I'll try to fix it as soon as possible.
+        </p>
+        <p>
+          Wade, W. R. (2009). <i>An Introduction to Analysis</i> (4th ed.). Prentice Hall.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+{% endblock content %}

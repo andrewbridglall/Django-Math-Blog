@@ -1,12 +1,7 @@
 node_modules
+__pycache__/
 .vscode/
 env/
-mail/
-media_root/
-scss/
-src/
-static_root/
-.browserslistrc
-.travis.yml
-gulpfile.js
 *.json
+*~
+*.pyc

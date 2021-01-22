@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+  p {
+    margin: 0;
+  }
+  .col-lg-8 col-md-10 mx-auto img {
+    width: 100%
+  }
+  mjx-container[jax="CHTML"][display="true"] {
+    margin: 0.3em 0;
+}
+</style>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({% static 'img/dc-building.jpg' %})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>{{ post.title }}</h1>
+            <h2 class="subheading">{{ post.overview | safe }}</h2>
+            <span class="meta">Posted by
+              <a href="/about">{{ post.author.user.username }}</a>
+              on {{ post.timestamp }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          {{ post.content | safe }}
+          <hr>
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="{{ post.document.url }}" target ="_blank" rel="noopener noreferrer">Download PDF</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </article>
+  
+  <hr>
+
+{% endblock content %}
