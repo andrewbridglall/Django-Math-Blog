@@ -6,7 +6,7 @@ Built using three main tools:
 
 1. [Django](https://www.djangoproject.com/) framework
 2. [MathJax](https://www.mathjax.org/) JavaScript engine
-3. [PythonAnywhere](https://www.pythonanywhere.com/user/abridglall/) for hosting
+3. [PythonAnywhere](https://www.pythonanywhere.com/) for hosting
 
 <img src="screenshot1.png" width="600">
 

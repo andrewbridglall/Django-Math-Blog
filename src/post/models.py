@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth import get_user_model
 from django.db.models.deletion import CASCADE
 from django.urls import reverse
-from tinymce.models import HTMLField
+from tinymce import HTMLField
 
 from blog.utils import unique_slug_generator
 from django.db.models.signals import pre_save
